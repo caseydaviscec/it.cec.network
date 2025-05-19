@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'The Value of IT — Empowering Your Campus Every Day',
   ignoreTitleTemplate: true,
 };
 ---
@@ -23,120 +23,168 @@ const metadata = {
 
   <Hero
     actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Discover More', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/gummy-programming.svg', alt: 'IT Department Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
+      The IT Department <span class="hidden xl:inline"></span>
+      <span class="text-accent dark:text-white"> powering your campuses</span> with technology
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+        <span class="font-semibold">W.D.I.T.D.?-</span> What Does IT Do? Explore how IT drives productivity, security, and innovation across your campuses.
+      </span>
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="Our Mission:" description="Delivering reliable, secure, and innovative technology solutions to enable campus success." />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="The Benefits of IT"
+    title="How IT Empowers Your Campus"
+    subtitle="From daily operations to strategic growth, IT is the backbone of modern campuses."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Reliable Infrastructure',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Ensuring your networks, servers, and devices are always available so your team can work efficiently and without interruption.',
+        icon: 'tabler:server',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Cybersecurity & Data Protection',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Safeguarding company data and systems from threats, ensuring compliance, and protecting your reputation.',
+        icon: 'tabler:shield-lock',
       },
       {
-        title: 'Best Practices',
+        title: 'Technical Support',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Providing fast, friendly help for all technology issues, minimizing downtime and keeping employees productive.',
+        icon: 'tabler:headset',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Business Continuity',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Implementing backup, disaster recovery, and contingency plans so your business can weather any storm.',
+        icon: 'tabler:repeat',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Process Automation',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Streamlining repetitive tasks and workflows with technology, saving time and reducing errors.',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Strategic Technology Planning',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'Aligning IT investments with business goals, enabling growth, innovation, and competitive advantage.',
         icon: 'tabler:bulb',
       },
     ]}
   />
 
+    <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'Issues Fixed in 24-25 School Year', amount: '3,800+' },
+      { title: 'Laptops and Servers Managed', amount: '1000+' },
+      { title: 'Daily User Cyberattacks Prevented', amount: '500+' },
+      { title: 'Days since last Internet Outage', amount: '615' },
+    ]}
+  />
+
+  <!-- IT Pillars Widget ************** -->
+
+  <Features2
+    title="The Six Pillars of IT Support"
+    subtitle="The six core tenants of IT support that we provide to the CEC Network."
+    tagline="IT Services"
+    items={[
+      {
+        title: 'Safety and Security',
+        description: "Your first point of contact for all technology questions and issues.",
+        icon: 'flat-color-icons:like',
+      },
+      {
+        title: 'Infinite Campus Student Record Management',
+        description:
+          "Ensuring fast, secure, and reliable connectivity for all users and devices.",
+        icon: 'flat-color-icons:accept-database',
+      },
+      {
+        title: 'End-User Device Management',
+        description:
+          'Managing computers, mobile devices, and hardware lifecycles for optimal performance.',
+        icon: 'flat-color-icons:multiple-smartphones',
+      },
+      {
+        title: 'Server, Network and Internet Connectivity', 
+        description:
+          "Supporting the software tools your teams rely on every day.",
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'CyberSecurity Prevention & Awareness',
+        description:
+          'Educating employees on best practices to keep your campus safe.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Application Support for Curriculum and Instruction',
+        description: 'Delivering technology projects on time and within budget.',
+        icon: 'flat-color-icons:entering-heaven-alive',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="IT as a Business Partner"
+    title="Driving Efficiency and Innovation"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Collaboration Tools',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Empowering teams to communicate and collaborate from anywhere with secure email, chat, and video conferencing.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Cloud Solutions',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Enabling flexibility and scalability with cloud-based applications and storage.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Data Analytics',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Turning raw data into actionable insights to support smarter business decisions.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://coloradoearlycolleges.org/wp-content/uploads/2022/02/DSC6739-860x573.jpg',
+      alt: 'Collaboration Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Empowering Educators with Technology</h3>
+      Your IT Department enables your teachers to achieve more, together.
     </Fragment>
 
-    <Fragment slot="bg">
+  <!-- <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
+    </Fragment> -->
   </Content>
 
   <!-- Content Widget **************** -->
@@ -145,31 +193,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Cost Savings',
+        description: `Reducing operational costs through smart technology investments and efficient support.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Scalability',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Supporting your company’s growth with flexible solutions that adapt as your needs change.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Compliance',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          "Helping your business meet industry regulations and standards with secure, auditable systems.",
       },
       {
-        title: 'Integration of media',
+        title: 'Vendor Management',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Managing relationships with technology vendors to ensure you get the best value and service.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: 'https://coloradoearlycolleges.org/wp-content/uploads/2021/03/DSC4915-860x484.jpg',
+      alt: 'Growth Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">IT is your partner for sustainable campus growth.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -183,31 +231,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Employee Onboarding & Training',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Ensuring new hires have the tools and knowledge they need to succeed from day one.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Innovation Enablement',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Supporting new business initiatives and digital transformation projects.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Sustainable Practices',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Promoting green IT and energy-efficient solutions to reduce environmental impact.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Customer Experience',
+        description: `Delivering reliable technology that helps your team provide excellent service to your customers.`,
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'https://coloradoearlycolleges.org/wp-content/uploads/2023/10/SubPage_HeaderImage_Careers.png',
+      alt: 'Teamwork Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">IT is the foundation for a productive, innovative, and resilient campus.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,93 +265,95 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="How IT Supports Your Campus Every Day"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Boots on the Ground</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "Understanding your campus needs and challenges and able to respond to technology problems immediately.",
+        icon: 'tabler:message',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Implement</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "Manage technology assets, software, and systems to ensure they meet your campus needs. Maximizing your technology investment.",
+        icon: 'tabler:settings',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Support</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Providing ongoing maintenance, troubleshooting, and user training to keep everything running smoothly. Your IT Site Coordinator is always there to help.',
+        icon: 'tabler:lifebuoy',
       },
       {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'Step 4: <span class="font-medium">Innovate</span>',
+        description:
+          'Continuously seeking new ways to improve processes and drive campus value through technology. Keeping your campus ahead of the curve.',
+        icon: 'tabler:rocket',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      alt: 'IT Process Image',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Key IT Services"
+    subtitle="Essential components that keep your campus running"
+    tagline="IT Services"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'Help Desk',
+        description: "Your first point of contact for all technology questions and issues.",
+        icon: 'flat-color-icons:assistant',
       },
       {
-        title: 'Heros',
+        title: 'Network Management',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+          "Ensuring fast, secure, and reliable connectivity for all users and devices.",
+        icon: 'flat-color-icons:command-line',
       },
       {
-        title: 'Features',
+        title: 'Device Management',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+          'Managing computers, mobile devices, and hardware lifecycles for optimal performance.',
+        icon: 'flat-color-icons:multiple-smartphones',
       },
       {
-        title: 'Content',
+        title: 'Application Support',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+          "Supporting the software tools your teams rely on every day.",
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Security Awareness',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+          'Educating employees on best practices to keep your campus safe.',
+        icon: 'flat-color-icons:document',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
+        title: 'Project Management',
+        description: 'Delivering technology projects on time and within budget.',
+        icon: 'flat-color-icons:document',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
+        title: 'Asset Tracking',
+        description: 'Keeping an accurate inventory of all technology assets.',
+        icon: 'flat-color-icons:database',
       },
       {
-        title: 'Contact',
+        title: 'Vendor Coordination',
         description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+          'Managing external technology partners and service providers.',
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        title: 'IT Policy & Compliance',
+        description: "Establishing guidelines to ensure safe and responsible technology use.",
+        icon: 'flat-color-icons:approval',
       },
     ]}
   >
@@ -312,65 +362,52 @@ const metadata = {
     </Fragment>
   </Features2>
 
-  <!-- HighlightedPosts Widget ******* -->
+  <!-- HighlightedPosts Widget ******* 
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
+    title="Explore More IT Insights"
+    information={`Our blog covers the latest trends, tips, and best practices in IT. 
+                  Stay informed and discover how technology can further benefit your campus.`}
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="Frequently Asked IT Questions"
+    subtitle="Learn more about how IT supports your campus and what we can do for you."
+    tagline="IT FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'How does IT improve productivity?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "By providing reliable systems, fast support, and automation, IT helps employees focus on their work instead of troubleshooting technology.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'What steps does IT take to protect company data?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'We implement firewalls, antivirus, encryption, backups, and employee training to keep your data safe from threats.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'How can IT help us scale as we grow?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "IT plans for future needs, implements scalable solutions, and ensures your technology can grow with your campus.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'What should I do if I have a technology issue?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "Contact the IT help desk! We're here to resolve your issues quickly and get you back to work.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'How does IT support remote work?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "We provide secure remote access, collaboration tools, and support to keep your team connected from anywhere.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'How does IT contribute to innovation?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "By researching new technologies, piloting solutions, and supporting digital transformation, IT helps your campus stay ahead.",
       },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
     ]}
   />
 
@@ -380,20 +417,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Contact IT',
+        href: 'mailto:helpdesk@coloradoearlycolleges.org',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:mail',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Are you a staff member or faculty member that needs help with technology?
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Getting assistance is as easy as sending an email to our help desk. We are here to help you with all your technology needs.
     </Fragment>
   </CallToAction>
 </Layout>
