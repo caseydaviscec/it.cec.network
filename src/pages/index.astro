@@ -12,7 +12,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'The Value of IT — Empowering Your Campus Every Day',
+  title: 'The IT Department powering our students with technology',
   ignoreTitleTemplate: true,
 };
 ---
@@ -22,17 +22,16 @@ const metadata = {
 
   <Hero
     actions={[{ text: 'Discover More', href: '#features' }]}
-    image={{ src: '~/assets/images/gummy-programming.svg', alt: 'IT Department Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.jpg', alt: 'IT Department Hero Image' }}
   >
     <Fragment slot="title">
       The IT Department <span class="hidden xl:inline"></span>
-      <span class="text-accent dark:text-white"> powering your campuses</span> with technology
+      <span class="text-accent dark:text-white"> powering our students</span> with technology
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">W.D.I.T.D.?-</span> What Does IT Do? Explore how IT drives productivity, security, and
-        innovation across your campuses.
+        <span class="font-semibold">W.D.I.T.D.?-</span> What Does IT Do? Explore how IT enables our students, empowers our staff and maximizes learning across your campuses.
       </span>
     </Fragment>
   </Hero>
