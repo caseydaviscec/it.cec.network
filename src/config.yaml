@@ -1,7 +1,7 @@
 site:
   name: CEC IT
   site: 'https://it.cec.network'
-  base: '/'
+  base: '/dist/'
   trailingSlash: false
 
   googleSiteVerificationId: null
